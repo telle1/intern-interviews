@@ -1,0 +1,52 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+main{
+    font-family: 'Karla', sans-serif;
+    min-height: 100vh;
+    background: url('./lob_bg.png') no-repeat center center/cover;
+    display: flex;
+    padding: 100px;
+    animation: fadeIn 2s;
+}
+
+main > div {
+    flex: 1;
+}
+
+.greeting{
+    font-size: 60px;
+    color: #FD9AAD;
+    text-shadow: 5px 5px 5px rgb(227, 220, 220);
+    text-align: center;
+    animation: fadeRight 2s;
+}
+
+.about-me p{
+    text-indent: 50px;
+    color:#6c6b6b;
+    animation: fadeLeft 2s;
+}
+
+@keyframes fadeRight{
+    from {
+        transform: translateX(-500px);
+    }
+    
+}
+
+@keyframes fadeLeft{
+    from {
+        transform: translateX(500px);
+    }
+}
+
+@keyframes fadeIn{
+    from {
+        opacity: 0;
+    }
+}
+
