@@ -12,7 +12,7 @@ function changeDialValue (index, incrementBy) {
 
   for (let i = 0; i < SECRET_COMBO.length; i++) {
     if (lockState.wheels[i] !== SECRET_COMBO[i]) {
-      return false;
+      break
     }
     if (i == SECRET_COMBO.length - 1 && lockState.wheels[i] === SECRET_COMBO[i]) {
       lockState.locked = false;

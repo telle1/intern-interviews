@@ -5,48 +5,42 @@
 }
 
 body {
+    font-family: 'Karla', sans-serif;
     min-height: 100vh;
     background: url('./lob_bg.png') no-repeat center center/cover;
-
 }
 
-span {
-    color: #0099D7;
-}
 
 main{
-    font-family: 'Karla', sans-serif;
     display: flex;
     gap: 20px;
     padding: 50px 100px;
-    animation: fadeIn 2s;
-
 }
 
 main > div {
     flex: 1;
 }
 
-.greeting{
-    font-size: 60px;
-    color: #FD9AAD;
-    text-shadow: 5px 5px 5px rgb(227, 220, 220);
-    text-align: center;
-    animation: fadeRight 2s;
+.img_wrapper{
+    animation: fadeRight 1.5s;
 }
 
-.greeting img{
+.img_wrapper img{
     width: 100%;
 }
 
 
 .about-me p{
-    text-indent: 50px;
     color:#6c6b6b;
+    text-indent: 50px;
     margin-bottom: 10px;
-    animation: fadeLeft 2s;
-    /* font-size: 18px; */
+    animation: fadeLeft 1.5s;
 }
+
+.about-me span {
+    color: #0099D7;
+}
+
 
 @keyframes fadeRight{
     from {
@@ -60,13 +54,6 @@ main > div {
         transform: translateX(500px);
     }
 }
-
-@keyframes fadeIn{
-    from {
-        opacity: 0;
-    }
-}
-
 
 @media screen and (max-width:1000px){
     main {
