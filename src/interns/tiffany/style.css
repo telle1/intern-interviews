@@ -1,0 +1,62 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Karla', sans-serif;
+    min-height: 100vh;
+    background: url('./lob_bg.png') no-repeat center center/cover;
+}
+
+
+main{
+    display: flex;
+    gap: 20px;
+    padding: 50px 100px;
+}
+
+main > div {
+    flex: 1;
+}
+
+.img_wrapper{
+    animation: fadeRight 1.5s;
+}
+
+.img_wrapper img{
+    width: 100%;
+}
+
+
+.about-me p{
+    color:#6c6b6b;
+    text-indent: 50px;
+    margin-bottom: 10px;
+    animation: fadeLeft 1.5s;
+}
+
+.about-me span {
+    color: #0099D7;
+}
+
+
+@keyframes fadeRight{
+    from {
+        transform: translateX(-500px);
+    }
+    
+}
+
+@keyframes fadeLeft{
+    from {
+        transform: translateX(500px);
+    }
+}
+
+@media screen and (max-width:1000px){
+    main {
+        flex-direction: column;
+    }
+}
