@@ -1,3 +1,6 @@
+# Preview 
+![Preview](./preview.png)
+
 # Intern Interviews
 ## Directions
 - Please duplicate this respository as a private repo in your own GitHub account.
